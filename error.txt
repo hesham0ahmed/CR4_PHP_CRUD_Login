@@ -1,0 +1,6 @@
+
+got an error:
+
+Warning: move_uploaded_file(pictures/64c0405147e49.jpg): Failed to open stream: No such file or directory in C:\xampp\htdocs\CR4\file_upload.php on line 29
+
+Warning: move_uploaded_file(): Unable to move "C:\xampp\tmp\php8850.tmp" to "pictures/64c0405147e49.jpg" in C:\xampp\htdocs\CR4\file_upload.php on line 29
