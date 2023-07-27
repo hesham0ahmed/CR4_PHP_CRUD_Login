@@ -53,7 +53,7 @@
 
     if (mysqli_num_rows($result) > 0) {
       echo "
-      <div class='container d-flex justify-content-center'>
+      <div class='container'>
       <div class='row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1'>";
 
       while ($row = mysqli_fetch_assoc($result)) {
@@ -71,8 +71,9 @@
         $used = ($row["used"] == 0) ? "No" : "<span style='color: red;'>Yes</span>";
 
 
-        echo "
-        <div class='card my-2 mx-2' style='width: 18rem;'>
+        echo " <div class='container'>
+        <div>
+        <div class='card my-2 mx-2' style='width: auto;'>
         <img src='../pictures/{$row["picture"]}' class='card-img-top my-2' alt='...'>
         <div class='card-body'>
           <h5 class='card-title'>{$row["title"]}</h5>
@@ -88,7 +89,7 @@
         Publisher: {$row["publisher_name"]}
         </li>
         </ul>
-        </div>";
+        </div></div></div>";
       }
       echo "
       </div>
